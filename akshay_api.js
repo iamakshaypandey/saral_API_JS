@@ -9,7 +9,7 @@ axios.get("http://saral.navgurukul.org/api/courses").then((res)=>{
     console.log(a,i.name)
     list_id.push(i.id)
   }
-  console.log("wel-come select the course")
+  console.log("wel-come select the course 123")
   let user =prompt('chouse course number:-')
   var course_id=list_id[user-1]
   axios.get("http://saral.navgurukul.org/api/courses/" + course_id + "/exercises").then((resp)=>{
